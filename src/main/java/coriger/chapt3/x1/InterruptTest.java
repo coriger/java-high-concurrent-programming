@@ -12,6 +12,7 @@ public class InterruptTest {
                 while(true){
                     if(!Thread.currentThread().isInterrupted()){
                         System.out.println("sss");
+                        Thread.currentThread().interrupt();
                     }
                 }
             }
